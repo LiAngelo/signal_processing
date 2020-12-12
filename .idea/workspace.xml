@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daf35324-9634-4ab4-a141-640c3624b082" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Pat1Train_8_0.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scaling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cwt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_0_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_0_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_10_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_10_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_11_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_11_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_12_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_12_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_13_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_13_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_14_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_14_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_15_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_15_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_16_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_16_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_17_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_17_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_18_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_18_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_19_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_19_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_1_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_1_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_2_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_2_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_3_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_3_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_4_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_4_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_5_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_5_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_6_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_6_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_7_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_7_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_8_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_8_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_cwt/1_9_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_9_1.png" afterDir="false" />
-    </list>
+    <list default="true" id="daf35324-9634-4ab4-a141-640c3624b082" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +65,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scaling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="371">
               <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="e#82#100#0" expanded="true" />
@@ -125,8 +98,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="116" />
+    <option name="x" value="332" />
+    <option name="y" value="329" />
     <option name="width" value="1697" />
     <option name="height" value="877" />
   </component>
@@ -261,7 +234,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="116" width="1697" height="877" extended-state="0" />
+    <frame x="271" y="110" width="1697" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19272077" />
@@ -453,7 +426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scaling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="371">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#82#100#0" expanded="true" />
