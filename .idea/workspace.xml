@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="daf35324-9634-4ab4-a141-640c3624b082" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dwt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Pat1Train_8_0.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scaling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cwt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_0_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_0_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_10_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_10_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_11_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_11_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_12_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_12_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_13_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_13_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_14_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_14_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_15_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_15_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_16_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_16_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_17_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_17_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_18_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_18_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_19_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_19_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_1_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_1_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_2_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_2_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_3_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_3_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_4_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_4_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_5_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_5_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_6_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_6_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_7_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_7_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_8_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_8_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_cwt/1_9_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_cwt/1_9_1.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,46 +39,49 @@
     <session id="-1240545251">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="4" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpg" value="1" />
-          <entry key="pkl" value="1" />
-          <entry key="png" value="14" />
-          <entry key="py" value="7" />
+          <entry key="md" value="1" />
+          <entry key="pkl" value="2" />
+          <entry key="png" value="74" />
+          <entry key="py" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="15" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Image" value="75" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1568" />
+          <entry key="py" value="2017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1568" />
+          <entry key="Python" value="2017" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1161">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="10" selection-end-column="9" />
               <folding>
                 <element signature="e#82#100#0" expanded="true" />
               </folding>
@@ -64,25 +89,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stft.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scaling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+            <state relative-caret-position="162">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dwt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#82#100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,17 +116,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dwt.py" />
-        <option value="$PROJECT_DIR$/cwt.py" />
         <option value="$PROJECT_DIR$/stft.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/cwt.py" />
+        <option value="$PROJECT_DIR$/dwt.py" />
+        <option value="$PROJECT_DIR$/scaling.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="332" />
-    <option name="y" value="210" />
-    <option name="width" value="1588" />
-    <option name="height" value="805" />
+    <option name="x" value="175" />
+    <option name="y" value="116" />
+    <option name="width" value="1697" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -155,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stft">
+  <component name="RunManager" selected="Python.dwt">
     <configuration name="cwt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="signal_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,9 +241,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.stft" />
         <item itemvalue="Python.dwt" />
         <item itemvalue="Python.cwt" />
+        <item itemvalue="Python.stft" />
       </list>
     </recent_temporary>
   </component>
@@ -246,15 +261,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="332" y="210" width="1588" height="805" extended-state="0" />
+    <frame x="175" y="116" width="1697" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20612636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19272077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37790698" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.14619882" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18790218" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3809524" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -270,46 +286,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dwt.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/Pat1Train_1_1.pkl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/test2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_15_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_13_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_12_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_10_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_4_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/test2.jpg" />
     <entry file="file://$PROJECT_DIR$/image_stft/1_1_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image_stft/1_3_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_cwt/1_0_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file:///opt/anaconda3/envs/PyTorch/lib/python3.7/codecs.py">
@@ -319,23 +304,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/anaconda3/envs/PyTorch/lib/python3.7/site-packages/matplotlib/cm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_1_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_2_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_3_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_4_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_6_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_7_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_9_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_8_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_test/1_0_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_7_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_9_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_11_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_12_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_13_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_15_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_16_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_18_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_stft/1_6_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_stft/1_0_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/stft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-760">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image_stft/1_9_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_stft/1_8_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_3_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_4_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_17_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_19_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_14_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_10_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_6_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_2_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_5_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_1_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_8_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Pat1Train_8_0.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_cwt/1_0_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dwt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="1254">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -344,8 +443,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cwt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1161">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <element signature="e#82#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#82#100#0" expanded="true" />
           </folding>

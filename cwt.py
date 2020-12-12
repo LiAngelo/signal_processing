@@ -9,6 +9,7 @@ from matplotlib import pyplot as plt
 import pywt
 import glob
 import os
+import matplotlib.colors as colors
 
 def normalization(signal):
     '''normaliz each frequency band to 0-1 range separately
@@ -71,12 +72,14 @@ if __name__ == '__main__':
 
         #split into 20 30sec window
         for i in range(20):
-            plt.figure(figsize=(8, 2))
+            plt.figure(figsize=(8, 4))
             plt.gca().xaxis.set_major_locator(plt.NullLocator())
             plt.gca().yaxis.set_major_locator(plt.NullLocator())
             plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
             plt.margins(0, 0)
-            plt.pcolormesh(t, frequencies, norm_signal[:,i*12000:(i+1)*12000])
+            Z = norm_signal[:, i * 12000:(i + 1) * 12000]
+            plt.pcolormesh(t, frequencies, Z, vmin=Z.min(), vmax=Z.max())
+            #plt.pcolormesh(t, frequencies, Z, norm=colors.LogNorm(vmin=Z.min(), vmax=Z.max()))
             plt.axis('off')
             name = str(segment_no) + '_' + str(i) + '_' + str(label)
             plt.savefig((os.path.join('./image_cwt',name+'.png')))
