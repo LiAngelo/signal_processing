@@ -1,2 +1,2 @@
 # signal_processing
-Three different methods(STFT, CWT, DWT) transform EEG signal into image visualisation
+Different methods(STFT, CWT) transform EEG signal into image visualisation

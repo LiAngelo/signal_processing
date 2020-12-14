@@ -11,7 +11,7 @@ import glob
 import os
 import matplotlib.colors as colors
 
-def normalization(signal):
+def normalization(signal, maxVals,minVals = 0):
     '''normaliz each frequency band to 0-1 range separately
 
     Parameters
@@ -19,8 +19,6 @@ def normalization(signal):
     signal: {2d numpy array}
         The input signal, 200 x 240000.
     '''
-    minVals = min(signal)
-    maxVals = max(signal)
     ranges = maxVals - minVals
     normData = np.zeros(np.shape(signal))
     m = signal.shape
@@ -52,6 +50,8 @@ def cwt(signal, wavename='cgau8', totalscal=201, sampling_rate=400):
 
 if __name__ == '__main__':
     files = glob.glob1('data/', '*.pkl')
+    max_band = pd.read_csv('max.txt', sep=' ')
+    max_band = np.array(max_band)
 
     for i in range(len(files)):
         file_name = files[i]
@@ -59,16 +59,15 @@ if __name__ == '__main__':
         df = pd.read_pickle(os.path.join('data', file_name))
         sampling_rate = 400
         t = np.arange(0, 30, 1.0 / sampling_rate)
-        signal = df['ch13']
+        signal = df['ch0']
 
         #cwt
         cwt_signal, frequencies = cwt(signal)
 
         #normalization
-        norm_signal = [[0 for i in range(cwt_signal.shape[1])] for i in range(len(cwt_signal))]
+        norm_signal = np.zeros((cwt_signal.shape[0], cwt_signal.shape[1]), dtype=float)
         for i in range(len(cwt_signal)):
-            norm_signal[i] = normalization(cwt_signal[i, :])
-        norm_signal = np.array(norm_signal)
+            norm_signal[i,:] = normalization(cwt_signal[i, :], max_band[0,i])
 
         #split into 20 30sec window
         for i in range(20):
@@ -78,9 +77,9 @@ if __name__ == '__main__':
             plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
             plt.margins(0, 0)
             Z = norm_signal[:, i * 12000:(i + 1) * 12000]
-            plt.pcolormesh(t, frequencies, Z, vmin=Z.min(), vmax=Z.max())
-            #plt.pcolormesh(t, frequencies, Z, norm=colors.LogNorm(vmin=Z.min(), vmax=Z.max()))
+            #plt.pcolormesh(t, frequencies, Z)
+            plt.pcolormesh(t, frequencies, Z, norm=colors.LogNorm())
             plt.axis('off')
             name = str(segment_no) + '_' + str(i) + '_' + str(label)
-            plt.savefig((os.path.join('./image_cwt',name+'.png')))
+            plt.savefig((os.path.join('./image_cwt_log',name+'.png')))
             #plt.show()
