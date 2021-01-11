@@ -32,13 +32,13 @@ def cwt(signal, wavename='cgau8', totalscal=201, sampling_rate=400):
     return np.abs(cwt_signal), frequencies
 
 if __name__ == '__main__':
-    files = glob.glob1('data/', '*.pkl')
+    files = glob.glob1('data/Pat1Train', '*.pkl')
     min_band = np.ones((16, 200), dtype=float)
     max_band = np.zeros((16, 200), dtype=float)
 
     for file in range(len(files)):
         file_name = files[file]
-        df = pd.read_pickle(os.path.join('data', file_name))
+        df = pd.read_pickle(os.path.join('data/Pat1Train', file_name))
         signal = df.loc[:, 'ch0':'ch15']
         signal = np.array(signal)
 

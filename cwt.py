@@ -1,4 +1,3 @@
-
 __author__ = "Yunzhong Li"
 __maintainer__ = "Yunzhong Li"
 __version__ = "1.0.1"
@@ -11,25 +10,48 @@ import glob
 import os
 import matplotlib.colors as colors
 
-def normalization(signal, maxVals,minVals = 0):
-    '''normaliz each frequency band to 0-1 range separately
+sampling_rate = 400
 
+def split_signal(data, epoch_length_sec, stride_sec):
+    ''' split 10 minutes into epochs
     Parameters
     ----------
-    signal: {2d numpy array}
-        The input signal, 200 x 240000.
+    data: {2d numpy array: channels * samples}
+        The input signal, 16 x 240000.
+    epoch_length_sec: int
+        The length (sec) of each epoch.
+    stride_sec: int
+        The length (sec) of stride.
+        epoch_length_sec == stride_sec mean no overlap
     '''
-    ranges = maxVals - minVals
-    normData = np.zeros(np.shape(signal))
-    m = signal.shape
-    normData = signal - np.tile(minVals, m)
-    normData = normData/np.tile(ranges, m)
-    return normData
+    signal = np.array(data, dtype=np.float32)
+    signal_epochs = []
+    samples_in_epoch = epoch_length_sec * sampling_rate
+    stride = stride_sec * sampling_rate
+
+    # compute dropout indices
+    drop_indices_c0 = np.where(signal[:, 0] == signal[:, 1])[0]
+    drop_indices_c1 = np.where(signal[:, 14] == signal[:, 15])[0]
+    drop_indices = np.intersect1d(drop_indices_c0, drop_indices_c1)
+    drop_indices = np.append(drop_indices, len(signal))
+
+    window_start = 0
+    for i in drop_indices:
+        epoch_start = window_start
+        epoch_end = epoch_start + samples_in_epoch
+
+        while epoch_end < i:
+            signal_epochs.append(signal[epoch_start:epoch_end, :])
+            epoch_start += stride
+            epoch_end += stride
+
+        window_start = i + 1
+
+    return np.array(signal_epochs)
 
 
 def cwt(signal, wavename='cgau8', totalscal=201, sampling_rate=400):
     '''do continuous wavelet transform
-
     Parameters
     ----------
     signal: {2d numpy array}
@@ -42,44 +64,45 @@ def cwt(signal, wavename='cgau8', totalscal=201, sampling_rate=400):
         The sampling rate of signal, set:400Hz
     '''
 
-    fc = pywt.central_frequency(wavename)    # central frequency
+    fc = pywt.central_frequency(wavename)  # central frequency
     cparam = 2 * fc * totalscal
-    scales = cparam / np.arange(totalscal, 1, -1) # caculate scales
+    scales = cparam / np.arange(totalscal, 1, -1)  # caculate scales
     cwt_signal, frequencies = pywt.cwt(signal, scales, wavename, 1.0 / sampling_rate)
     return np.abs(cwt_signal), frequencies
 
+
 if __name__ == '__main__':
-    files = glob.glob1('data/', '*.pkl')
-    max_band = pd.read_csv('max.txt', sep=' ')
-    max_band = np.array(max_band)
+    files = glob.glob1('data/Pat1_1/', '*.pkl')
 
     for i in range(len(files)):
         file_name = files[i]
         segment_no, label = file_name[10:-4].split('_')
-        df = pd.read_pickle(os.path.join('data', file_name))
-        sampling_rate = 400
-        t = np.arange(0, 30, 1.0 / sampling_rate)
-        signal = df['ch0']
+        df = pd.read_pickle(os.path.join('data/Pat1_1/', file_name))
+        signal = df.loc[:, 'ch0':'ch15']
 
-        #cwt
-        cwt_signal, frequencies = cwt(signal)
+        # signal split
+        signal = split_signal(signal, 10, 10)
 
-        #normalization
-        norm_signal = np.zeros((cwt_signal.shape[0], cwt_signal.shape[1]), dtype=float)
-        for i in range(len(cwt_signal)):
-            norm_signal[i,:] = normalization(cwt_signal[i, :], max_band[0,i])
+        if len(signal.shape) == 3:
+            # signal with channel0
+            signal_c0 = signal[:, :, 0]
 
-        #split into 20 30sec window
-        for i in range(20):
-            plt.figure(figsize=(8, 4))
-            plt.gca().xaxis.set_major_locator(plt.NullLocator())
-            plt.gca().yaxis.set_major_locator(plt.NullLocator())
-            plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
-            plt.margins(0, 0)
-            Z = norm_signal[:, i * 12000:(i + 1) * 12000]
-            #plt.pcolormesh(t, frequencies, Z)
-            plt.pcolormesh(t, frequencies, Z, norm=colors.LogNorm())
-            plt.axis('off')
-            name = str(segment_no) + '_' + str(i) + '_' + str(label)
-            plt.savefig((os.path.join('./image_cwt_log',name+'.png')))
-            #plt.show()
+            # cwt (200,samples,12000)
+            cwt_signal, frequencies = cwt(signal_c0)
+
+            for epoch in range(cwt_signal.shape[1]):
+                ret = []
+                ret = np.log10(np.array(cwt_signal[:, epoch, :]) / np.sum(cwt_signal[:, epoch, :], axis=0))
+
+                # log plot
+                plt.figure(figsize=(10, 4))
+                plt.gca().xaxis.set_major_locator(plt.NullLocator())
+                plt.gca().yaxis.set_major_locator(plt.NullLocator())
+                plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
+                plt.margins(0, 0)
+                t = np.arange(0, ret.shape[1])
+                plt.pcolormesh(t, frequencies, np.float32(ret), norm=colors.Normalize(vmin=-6, vmax=-1))
+                plt.axis('off')
+                plt.colorbar()
+                name = str(segment_no) + '_' + str(epoch) + '_' + str(label)
+                plt.savefig((os.path.join('./image/continuous/Pat1_10sec_1', name + '.jpeg')))
